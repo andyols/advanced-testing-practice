@@ -1,26 +1,24 @@
 # Testing Practice
 
-### Calculations
+### Calculations SKIP THIS
 
 - Implement the calculation functions
 
-### Function
+### Function => in services/functions.js
 
 - Implement the code for the functions as described in the comments
 
-### Add Calculation Tests
+### Add Calculation Tests => in tests/calculations.test.js
 
 - subtracts 4 from 5 to equal 1
 - multiply 4 by 5 to equal 20
 - device 100 by 4 to equal 25
 
-### Add Function Tests
+### Add Function Tests => in tests/function.test.js
 
 - Implement the tests as described in the comments
 
-## TODO START
-
-### User Button Tests
+### User Button Tests => you can find this under the containers folder
 
 - Create a folder for UserButtonContainer in containers
 - Move UserButtonsContainer.js into this folder and rename it index
@@ -43,7 +41,7 @@
     - use store.getState() to check the length of the users array
     - expect it toBe 1 less than the current length
 
-### User Display Tests
+### User Display Tests => you can find this under the containers folder
 
 - Create a folder for UserContainer in containers
 - Create a file for UserContainer.test.js
@@ -52,8 +50,6 @@
 - mount Provider and SpecialTextContainer into wrapper
 - use the store to dispatch a “ADD_USER” action with the value of a user object
 - `expect(wrapper.find(“li”)).to.have.length(8);`
-
-## TODO END
 
 ### Hopefully at this point you can see there is a pattern to making the tests
 
