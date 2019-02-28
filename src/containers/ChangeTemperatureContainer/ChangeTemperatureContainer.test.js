@@ -1,6 +1,6 @@
 import React from 'react'
 import { Provider } from 'react-redux'
-import ChangeTemperatureContainer from './ChangeTemperatureContainer'
+import ChangeTemperatureContainer from './index'
 import { mount } from 'enzyme'
 import store from '../../store'
 let wrapper = null
@@ -16,7 +16,7 @@ beforeAll(() => {
 })
 
 describe('ChangeTemperatureContainer', () => {
-  it('should change currentTemp in state when the text box changes', () => {
+  it('should change currentTemp in state when the input changes', () => {
     const currentTempInput = wrapper.find('[type="number"]').at(0)
 
     currentTempInput.simulate('change', {
