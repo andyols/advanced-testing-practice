@@ -1,17 +1,23 @@
-import React from "react";
+import React from 'react'
 
-function ChangeTemperature(props){
-    return(
-      <div>
-        <br/>
-        <label>Change Temp -  Enter a value from 1-100<br/>
-          <input onChange={(e)=>{
-            if(props.set)
-              props.set(e.target.value);
-          }} type="number" min="0" max="100" />
-        </label>
-      </div>
-    )
+function ChangeTemperature(props) {
+  return (
+    <div>
+      <br />
+      <label>
+        Change Temp - Enter a value from 1-100
+        <br />
+        <input
+          onChange={e => {
+            if (props.set) props.set(e.target.value)
+          }}
+          type="number"
+          min="0"
+          max="100"
+        />
+      </label>
+    </div>
+  )
 }
 
-export default (ChangeTemperature);
+export default ChangeTemperature

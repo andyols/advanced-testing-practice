@@ -1,6 +1,6 @@
 import React from 'react'
 import { Provider } from 'react-redux'
-import UserContainer from '../UsersContainer'
+import UsersContainer from './UsersContainer'
 import { mount } from 'enzyme'
 import store from '../../store'
 let wrapper = null
@@ -9,7 +9,7 @@ beforeAll(() => {
   wrapper = mount(
     <Provider store={store}>
       <div>
-        <UserContainer />
+        <UsersContainer />
       </div>
     </Provider>
   )
