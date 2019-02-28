@@ -1,6 +1,6 @@
 import React from 'react'
 import { Provider } from 'react-redux'
-import UsersContainer from './UsersContainer'
+import UsersContainer from './index'
 import { mount } from 'enzyme'
 import store from '../../store'
 let wrapper = null
